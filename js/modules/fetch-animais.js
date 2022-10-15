@@ -23,8 +23,10 @@ export default function fetchAnimais(url, target) {
 		try {
 			const animaisResponse = await fetch(url);
 			const animaisJSON = await animaisResponse.json();
+			
 			animaisJSON.forEach(animal => preencherAnimais(animal))
 			animaAnimaisNumeros()
+			
 		} catch (erro) {
 			console.log(Error(erro))
 		}
