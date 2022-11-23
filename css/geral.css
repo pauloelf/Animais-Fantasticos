@@ -20,7 +20,8 @@ ul{
 
 .grid-container{
 	display: grid;
-	grid-template-columns: 1fr 120px auto 1fr;
+	grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+	
 }
 
 .menu{
@@ -55,7 +56,7 @@ ul{
 	box-sizing: border-box;
 	padding: 10px;
 	display: grid;
-	grid-template-columns: 90px 200px auto;
+	grid-template-columns: 90px 300px 1fr;
 	grid-gap: 20px;
 	margin-bottom: 4rem;
 }
